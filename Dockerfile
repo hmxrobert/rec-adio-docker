@@ -13,7 +13,7 @@ RUN pip install pipenv && pipenv install
 
 VOLUME /mnt/rec-adio
 
-RUN ln -s /mnt/rec-adio/savedata /Rec-adio/savedata && \
+RUN ln -s /mnt/rec-adio/savefile /Rec-adio/savefile && \
     ln -s /mnt/rec-adio/conf /Rec-adio/conf
 
 ENTRYPOINT ["/usr/local/bin/pipenv","run","start"]
