@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM python:3.6-alpine
 MAINTAINER hmxrobert
 
 RUN apk --update --no-cache add git rtmpdump ffmpeg tzdata && \
