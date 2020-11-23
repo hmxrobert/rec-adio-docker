@@ -9,7 +9,7 @@ RUN apk --update --no-cache add git rtmpdump ffmpeg tzdata && \
     rm -rf /Rec-adio/conf
 
 WORKDIR /Rec-adio
-RUN pipenv install
+RUN pip install pipenv && pipenv install
 
 VOLUME /mnt/rec-adio
 
