@@ -1,7 +1,7 @@
 FROM python:3.6-alpine
 MAINTAINER hmxrobert
 
-RUN apk --update --no-cache add git rtmpdump ffmpeg tzdata && \
+RUN apk --update --no-cache add git rtmpdump ffmpeg tzdata bash && \
     cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
     apk del tzdata && \
     git clone https://github.com/sun-yryr/Rec-adio.git && \
